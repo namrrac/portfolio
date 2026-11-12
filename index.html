@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — Designer &amp; Developer</title>
+  <meta name="description" content="Portfolio of Your Name — a designer and front-end developer building calm, useful things for the web.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Your Name — Designer &amp; Developer">
+  <meta property="og:description" content="Portfolio of Your Name — a designer and front-end developer building calm, useful things for the web.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23b8451f'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23fff' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    // Apply the saved theme before paint so there is no flash.
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var prefers = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = saved || prefers;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Your Name<span class="dot">.</span></a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle colour theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M2 12h2.2M19.8 12H22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M19.1 4.9l-1.6 1.6M6.5 17.5l-1.6 1.6"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></svg>
+        </button>
+
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>Available for select projects</p>
+      <h1>Designing calm, useful <em>things</em> for the web.</h1>
+      <p class="lede">
+        I'm Your Name, a designer and front-end developer. I take fuzzy ideas and turn them
+        into interfaces that feel obvious — then build them so they hold up in the real world.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="projects.html">
+          See selected work
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="contact.html">Start a conversation</a>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="work-heading">
+      <div class="section-head">
+        <h2 id="work-heading">Selected work</h2>
+        <a class="text-link" href="projects.html">All projects <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="grid-3">
+        <a class="card reveal" href="projects.html#atlas">
+          <div class="cover cover-a"><span>01</span></div>
+          <div class="card-body">
+            <h3>Atlas</h3>
+            <p>A dashboard that turns messy operational data into a single, readable story.</p>
+            <ul class="tags"><li>Product design</li><li>React</li></ul>
+          </div>
+        </a>
+
+        <a class="card reveal" href="projects.html#meridian">
+          <div class="cover cover-b"><span>02</span></div>
+          <div class="card-body">
+            <h3>Meridian</h3>
+            <p>Brand and marketing site for a climate research studio. Fast, quiet, deliberate.</p>
+            <ul class="tags"><li>Identity</li><li>Front-end</li></ul>
+          </div>
+        </a>
+
+        <a class="card reveal" href="projects.html#fieldnotes">
+          <div class="cover cover-c"><span>03</span></div>
+          <div class="card-body">
+            <h3>Field Notes</h3>
+            <p>A small publishing tool for writers who would rather write than configure things.</p>
+            <ul class="tags"><li>Design system</li><li>TypeScript</li></ul>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="do-heading">
+      <div class="section-head">
+        <h2 id="do-heading">What I do</h2>
+      </div>
+
+      <div class="grid-3 skills">
+        <article class="reveal">
+          <h3>Design</h3>
+          <p>Interface and interaction design, from first sketch to a component library that a team can actually use.</p>
+        </article>
+        <article class="reveal">
+          <h3>Build</h3>
+          <p>Semantic HTML, modern CSS, and just enough JavaScript. Static-first, accessible, and quick to load.</p>
+        </article>
+        <article class="reveal">
+          <h3>Ship</h3>
+          <p>Deployment pipelines, performance budgets, and the unglamorous maintenance that keeps a site alive.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="callout reveal">
+        <div>
+          <h2>Have something in mind?</h2>
+          <p>I take on a small number of projects at a time. Tell me what you're building.</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Get in touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Your Name. Built with GitHub Pages.</p>
+      <nav aria-label="Elsewhere">
+        <a href="https://github.com/" rel="me">GitHub</a>
+        <a href="https://www.linkedin.com/" rel="me">LinkedIn</a>
+        <a href="mailto:hello@example.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

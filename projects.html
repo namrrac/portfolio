@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work — Your Name</title>
+  <meta name="description" content="Selected projects by Your Name: product design, brand sites, and design systems.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Work — Your Name">
+  <meta property="og:description" content="Selected projects by Your Name: product design, brand sites, and design systems.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23b8451f'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23fff' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var prefers = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = saved || prefers;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Your Name<span class="dot">.</span></a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle colour theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M2 12h2.2M19.8 12H22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M19.1 4.9l-1.6 1.6M6.5 17.5l-1.6 1.6"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></svg>
+        </button>
+
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap page-head">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Work that had to <em>work</em>.</h1>
+      <p class="lede">Six projects, each with a constraint attached. Live links and case notes where I'm allowed to share them.</p>
+    </section>
+
+    <section class="wrap section" aria-labelledby="featured">
+      <h2 id="featured" class="visually-hidden">Featured projects</h2>
+
+      <div class="grid-3">
+        <a class="card reveal" id="atlas" href="#atlas">
+          <div class="cover cover-a"><span>01</span></div>
+          <div class="card-body">
+            <h3>Atlas</h3>
+            <p>Operations teams were exporting three reports to answer one question. Atlas merges them into a single view with a query builder non-technical staff can use.</p>
+            <ul class="tags"><li>Product design</li><li>React</li><li>Data viz</li></ul>
+          </div>
+        </a>
+
+        <a class="card reveal" id="meridian" href="#meridian">
+          <div class="cover cover-b"><span>02</span></div>
+          <div class="card-body">
+            <h3>Meridian</h3>
+            <p>Identity and site for a climate research studio. The brief: be credible without being cold. Serif headlines, generous space, no stock photography.</p>
+            <ul class="tags"><li>Identity</li><li>Front-end</li></ul>
+          </div>
+        </a>
+
+        <a class="card reveal" id="fieldnotes" href="#fieldnotes">
+          <div class="cover cover-c"><span>03</span></div>
+          <div class="card-body">
+            <h3>Field Notes</h3>
+            <p>A Markdown-first publishing tool. I designed the editor and the component library that powers published pages.</p>
+            <ul class="tags"><li>Design system</li><li>TypeScript</li></ul>
+          </div>
+        </a>
+
+        <a class="card reveal" href="#ledger">
+          <div class="cover cover-d"><span>04</span></div>
+          <div class="card-body">
+            <h3>Ledger</h3>
+            <p>Invoicing for freelancers who hate invoicing. Two screens, one clear next action, nothing else.</p>
+            <ul class="tags"><li>UX</li><li>Prototyping</li></ul>
+          </div>
+        </a>
+
+        <a class="card reveal" href="#relay">
+          <div class="cover cover-e"><span>05</span></div>
+          <div class="card-body">
+            <h3>Relay</h3>
+            <p>Internal tooling for a support team of forty. Cut ticket triage time roughly in half by making state visible.</p>
+            <ul class="tags"><li>Product design</li><li>Vue</li></ul>
+          </div>
+        </a>
+
+        <a class="card reveal" href="#harbor">
+          <div class="cover cover-f"><span>06</span></div>
+          <div class="card-body">
+            <h3>Harbor</h3>
+            <p>Documentation site for an open-source project. Searchable, fast, and honest about limitations.</p>
+            <ul class="tags"><li>Docs</li><li>Static site</li></ul>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="callout reveal">
+        <div>
+          <h2>Say hello</h2>
+          <p>Open to freelance projects and the occasional long-term collaboration.</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Contact me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Your Name. Built with GitHub Pages.</p>
+      <nav aria-label="Elsewhere">
+        <a href="https://github.com/" rel="me">GitHub</a>
+        <a href="https://www.linkedin.com/" rel="me">LinkedIn</a>
+        <a href="mailto:hello@example.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

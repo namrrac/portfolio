@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Your Name</title>
+  <meta name="description" content="About Your Name — designer and front-end developer. Background, tools, and how I work.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About — Your Name">
+  <meta property="og:description" content="About Your Name — designer and front-end developer.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23b8451f'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23fff' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var prefers = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = saved || prefers;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Your Name<span class="dot">.</span></a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle colour theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M2 12h2.2M19.8 12H22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M19.1 4.9l-1.6 1.6M6.5 17.5l-1.6 1.6"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></svg>
+        </button>
+
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap page-head">
+      <p class="eyebrow">About</p>
+      <h1>A designer who <em>ships</em>.</h1>
+      <p class="lede">I've spent the last several years between design tools and code editors, which is where I do my best work.</p>
+    </section>
+
+    <section class="wrap section">
+      <div class="two-col">
+        <div class="prose">
+          <p>
+            I started as a front-end developer, moved into product design, and never quite let go of
+            either. That means when I hand over a design it's usually already running in a browser.
+          </p>
+          <p>
+            I care about the boring parts: empty states, error messages, keyboard navigation, and what
+            happens on a phone with a bad connection. Those are the moments where a product either
+            respects its user or doesn't.
+          </p>
+          <p>
+            Most projects I take on are small and specific — a marketing site, a dashboard, a design
+            system that needs rescuing. I like working directly with the people who will live in the
+            thing I'm building.
+          </p>
+
+          <h2>How I work</h2>
+          <ul class="list">
+            <li><strong>Start with the constraint.</strong> Budget, timeline, and the one thing that must work.</li>
+            <li><strong>Show something early.</strong> Rough screens in week one beats polished screens in week six.</li>
+            <li><strong>Leave it maintainable.</strong> Plain files, clear names, a README that explains itself.</li>
+          </ul>
+
+          <h2>Currently</h2>
+          <p>
+            Available for freelance work from <strong>January</strong>. Based in your city, working
+            remotely with teams everywhere.
+          </p>
+        </div>
+
+        <aside class="sidebar">
+          <div class="panel">
+            <h3>Tools</h3>
+            <ul class="chips">
+              <li>Figma</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Git</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Selected facts</h3>
+            <dl class="facts">
+              <div><dt>Based</dt><dd>Your city</dd></div>
+              <div><dt>Experience</dt><dd>7 years</dd></div>
+              <div><dt>Focus</dt><dd>Product &amp; web</dd></div>
+              <div><dt>Status</dt><dd>Open to work</dd></div>
+            </dl>
+          </div>
+
+          <div class="panel">
+            <h3>Elsewhere</h3>
+            <ul class="link-list">
+              <li><a href="https://github.com/">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+              <li><a href="mailto:hello@example.com">Email</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="callout reveal">
+        <div>
+          <h2>Let's talk</h2>
+          <p>Tell me about the project, the deadline, and the part that's keeping you up at night.</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Get in touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Your Name. Built with GitHub Pages.</p>
+      <nav aria-label="Elsewhere">
+        <a href="https://github.com/" rel="me">GitHub</a>
+        <a href="https://www.linkedin.com/" rel="me">LinkedIn</a>
+        <a href="mailto:hello@example.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
