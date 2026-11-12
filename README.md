@@ -1,4 +1,4 @@
-# Your Name — Portfolio
+# Jason Carr — Portfolio
 
 A four-page static portfolio built for **GitHub Pages**. No build step, no dependencies,
 no framework. Edit the HTML and CSS directly and push.
@@ -16,18 +16,21 @@ js/main.js      Theme toggle, mobile menu, active nav, scroll reveal
 
 ## 1. Make it yours
 
-Replace these placeholders everywhere:
+The live site is already personalised for **Jason Carr** — these are the values in place:
 
-| Placeholder | Where | Notes |
-|---|---|---|
-| `Your Name` | Every page, `<title>`, README | Your actual name |
-| `hello@example.com` | Footers, contact page | Your email |
-| `https://github.com/` | Footers, about, contact | Your profile URL |
-| `https://www.linkedin.com/` | Footers, about, contact | Your profile URL |
-| Project cards | `index.html`, `projects.html` | Titles, descriptions, tags |
-| `Your city` | `about.html` | Location |
+| Value | Where |
+|---|---|
+| `Jason Carr` | Every page, `<title>`, brand, footer |
+| `namrrac@gmail.com` | Footers, contact page |
+| `https://github.com/namrrac` | Footers, about, contact |
+| `https://x.com/norcalhiker` | Footers, about, contact |
+| `Humboldt County` | `about.html` |
 
-Nice-to-haves:
+Still worth replacing: the **project cards** in `index.html` and `projects.html` (titles,
+descriptions, tags, and the `#anchor` links), plus the "Available for select projects" /
+"from January" availability copy.
+
+Other nice-to-haves:
 
 - Add a real social preview image (`og-image.png`, 1200×630) and point `og:image` at it.
 - Swap the CSS-gradient card covers for screenshots: `<img src="assets/atlas.jpg" alt="">` inside `.cover`.
@@ -37,32 +40,21 @@ Preview locally by opening `index.html` in a browser — everything works over `
 
 ## 2. Publish to GitHub Pages
 
-### Create the repo
-
-On [github.com/new](https://github.com/new), create a **public** repo. If you name it
-exactly `<your-username>.github.io` your site lives at `https://<your-username>.github.io`;
-any other name (e.g. `portfolio`) puts it at `https://<your-username>.github.io/portfolio`.
-
-Don't add a README or `.gitignore` — this folder already has both.
-
-### Push from this folder
-
-```powershell
-git init -b main
-git add .
-git commit -m "Add portfolio site"
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
-```
-
-### Turn on Pages
+**Already done:** repo is `github.com/namrrac/portfolio`, remote `origin` is set, and `main`
+is pushed. The one remaining step is turning Pages on:
 
 1. Repo → **Settings** → **Pages**
 2. Under *Build and deployment* → *Source*, choose **Deploy from a branch**
 3. Branch: **main**, folder: **/ (root)** → **Save**
-4. Wait ~30–60 seconds. The URL appears at the top of that page.
 
-Every later `git push` to `main` republishes automatically.
+Your site will be at **https://namrrac.github.io/portfolio/**. Every later `git push` to
+`main` republishes automatically.
+
+If you ever need to re-point the remote:
+
+```powershell
+git remote set-url origin https://github.com/namrrac/portfolio.git
+```
 
 ## 3. After it's live
 
